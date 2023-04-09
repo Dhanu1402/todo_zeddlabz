@@ -1,7 +1,12 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home';
+import Layout from './components/Layout';
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline text-green-500">
-      Hello world!
-    </h1>
+    <Router>
+      <Layout />
+      <Home />
+    </Router>
   );
 }
