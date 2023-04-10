@@ -56,6 +56,7 @@ export default function CreateTodo() {
           onChange={(e) => setDescription(e.target.value)}
           className="block w-full rounded-md p-2 mb-2 border"
         ></input>
+        {title.length === 0 && validation && <span>Invalid description</span>}
 
         <h6 className="text-sm text-gray-400">Due Date : </h6>
         <input

@@ -50,9 +50,9 @@ export default function EditTodo() {
       });
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h2>Edit Todo</h2>
+    <div className="bg-blue-50 h-screen flex items-center">
+      <form onSubmit={handleSubmit} className="w-64 mx-auto mb-12">
+        <h2 className="text-xl text-center text-gray-400">Edit Todo</h2>
 
         <label className="hidden">ID</label>
         <input value={id} disabled="disabled"></input>
@@ -63,6 +63,7 @@ export default function EditTodo() {
           placeholder="title"
           onMouseDown={(e) => setValue(true)}
           onChange={(e) => setTitle(e.target.value)}
+          className="block w-full rounded-md p-2 mb-2 border"
         ></input>
         {title.length === 0 && validation && <span>Invalid title</span>}
 
@@ -70,15 +71,31 @@ export default function EditTodo() {
           value={description}
           placeholder="description"
           onChange={(e) => setDescription(e.target.value)}
+          className="block w-full rounded-md p-2 mb-2 border"
         ></input>
+        {title.length === 0 && validation && <span>Invalid description</span>}
 
         <input
           value={dueDate}
+          type="date"
           onChange={(e) => setDueDate(e.target.value)}
+          className="block w-full rounded-md p-2 mb-2 border"
         ></input>
 
-        <button type="submit">Save</button>
-        <Link to="/">Back</Link>
+        <div className="flex gap-4">
+          <button
+            type="submit"
+            className="bg-Blue text-white text-center block w-full rounded-md p-2"
+          >
+            Save
+          </button>
+          <Link
+            to="/"
+            className="bg-Blue text-white text-center block w-full rounded-md p-2"
+          >
+            Back
+          </Link>
+        </div>
       </form>
     </div>
   );
