@@ -1,24 +1,10 @@
 {
-  "todos": [
-    [
-      {
-        "id": 1,
-        "title": "Leanne Graham",
-        "description": "Bret",
-        "dueDate": "10 Apr 2023"
-      },
-      {
-        "id": 2,
-        "title": "Leanne Graham",
-        "description": "Bret",
-        "dueDate": "10 Apr 2023"
-      },
-      {
-        "id": 3,
-        "title": "Leanne Graham",
-        "description": "Bret",
-        "dueDate": "10 Apr 2023"
-      }
-    ]
+  "todo": [
+    {
+      "title": "complete assignment",
+      "description": "cse assignments",
+      "dueDate": "2023-04-13",
+      "id": 1
+    }
   ]
 }

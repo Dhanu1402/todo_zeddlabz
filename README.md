@@ -11,4 +11,5 @@
 
 2. setting up json server
    1. npm install json-server
-   2. npm install axios
+   2. "json-server": "json-server --watch db.json --port 3002" : in scripts in package.json
+   3. npm install axios
